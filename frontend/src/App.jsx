@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 /* ================= IMPORTS SKELETON ================= */
-import HomePage from "./pages/HomePage"; 
+import HomePage from "./pages/Homepage"; 
 import UserLogin from "./pages/pages/user/UserLogin";
 import UserSignup from "./pages/pages/user/UserSignup";
 import TermOfServices from "./pages/pages/user/TermOfServices";
