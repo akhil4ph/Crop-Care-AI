@@ -1,4 +1,5 @@
 import { Camera, CheckCircle2, Zap, WifiOff, AlertTriangle } from 'lucide-react';
+import { Link } from 'react-router-dom'; // NEW: Link import kiya yahan
 import heroBg from '../../assets/hero/hero.webp'; 
 import posterImg from '../../assets/hero/poster.webp'; 
 
@@ -61,20 +62,20 @@ const Hero = () => {
             Specialized AI platform for identifying 200+ plant diseases and pests. Get instant diagnosis and treatment recommendations from professional-grade diagnostic technology.
           </p>
           
-          {/* UPDATED BUTTONS: Added hover:-translate-y-1, hover:shadow-2xl and pulse animation */}
+          {/* UPDATED BUTTONS: <button> ko <Link> banaya aur 'to' attribute lagaya */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-            <button 
-              type="button" 
-              className="animate-pulse-btn bg-[#10b981] text-white px-8 py-3.5 rounded-lg font-bold text-lg hover:bg-[#0d9b6c] hover:-translate-y-1 hover:shadow-2xl active:scale-95 transition-all duration-300 cursor-pointer"
+            <Link 
+              to="/disease-detection" 
+              className="inline-flex justify-center items-center animate-pulse-btn bg-[#10b981] text-white px-8 py-3.5 rounded-lg font-bold text-lg hover:bg-[#0d9b6c] hover:-translate-y-1 hover:shadow-2xl active:scale-95 transition-all duration-300 cursor-pointer"
             >
               Detect Disease Now
-            </button>
-            <button 
-              type="button" 
-              className="bg-white text-[#064e3b] px-8 py-3.5 rounded-lg font-bold text-lg hover:bg-gray-100 hover:-translate-y-1 hover:shadow-xl active:scale-95 transition-all duration-300 cursor-pointer"
+            </Link>
+            <Link 
+              to="/user/dashboard" 
+              className="inline-flex justify-center items-center bg-white text-[#064e3b] px-8 py-3.5 rounded-lg font-bold text-lg hover:bg-gray-100 hover:-translate-y-1 hover:shadow-xl active:scale-95 transition-all duration-300 cursor-pointer"
             >
-              Professional Tools
-            </button>
+              My Dashboard
+            </Link>
           </div>
           
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 pt-6">
@@ -135,13 +136,13 @@ const Hero = () => {
               <div className="absolute right-4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-400"></div>
             </div>
 
-            {/* UPDATED: Hover float added to treatment button too */}
-            <button 
-              type="button"
+            {/* UPDATED: Treatment button ko bhi Link bana diya */}
+            <Link 
+              to="/treatment"
               className="w-full bg-[#064e3b] text-white py-3 rounded-xl text-sm font-bold shadow-md hover:bg-[#04362a] hover:-translate-y-1 hover:shadow-xl active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
             >
               <CheckCircle2 className="w-5 h-5" /> View Treatment Options
-            </button>
+            </Link>
             
           </div>
         </div>
