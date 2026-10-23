@@ -21,7 +21,6 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-900 font-semibold hover:text-[#10b981] transition">Home</Link>
             <Link to="/MainCategory" className="text-gray-600 font-medium hover:text-[#10b981] transition">Disease ID</Link>
             <Link to="/blog" className="text-gray-600 font-medium hover:text-[#10b981] transition">Articles</Link>
             <Link to="/ContactUs" className="text-gray-600 font-medium hover:text-[#10b981] transition">Contact</Link>
@@ -30,7 +29,7 @@ const Navbar = () => {
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/login" className="bg-[#064e3b] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#04362a] transition shadow-md">
-              Sign In
+              Log In
             </Link>
           </div>
 
