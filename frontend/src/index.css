@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* src/index.css */
+:root {
+  --primary-color: #064e3b; /* Primary */
+  --accent-color: #10b981;  /* Accent */
+  --bg-color: #f8fafc;      /* Background[cite: 1] */
+  --alert-color: #ef4444;   /* Alert/Error[cite: 1] */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: #333;
+}
